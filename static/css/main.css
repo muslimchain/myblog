@@ -1,0 +1,32 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+header, footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+.posts article {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.ads .ad {
+    background: #fffae6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
