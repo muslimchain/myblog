@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="ads">
+    {% for ad in ads %}
+        <div class="ad">{{ ad.content|safe }}</div>
+    {% endfor %}
+</div>
+<div class="posts">
+    {% for post in posts %}
+        <article>
+            <h2><a href="{{ url_for('post', post_id=loop.index0) }}">{{ post.title }}</a></h2>
+            <p>{{ post.content[:200] }}...</p>
+        </article>
+    {% endfor %}
+</div>
+{% endblock %}
