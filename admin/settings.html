@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>إعدادات المدونة</h2>
+<form method="POST">
+    <input type="text" name="title" value="{{ settings.title }}" placeholder="عنوان الموقع">
+    <input type="text" name="description" value="{{ settings.description }}" placeholder="وصف الموقع">
+    <input type="password" name="password" value="{{ settings.password }}" placeholder="كلمة مرور الأدمن">
+    <button type="submit">حفظ التغييرات</button>
+</form>
+{% endblock %}
