@@ -1,0 +1,26 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+h1, h2 {
+    text-align: center;
+}
+form {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea, button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+button {
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
