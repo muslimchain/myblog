@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-<h2>{% if action == "new" %}إضافة مقال{% else %}تعديل مقال{% endif %}</h2>
-<form method="POST">
-    <input type="text" name="title" placeholder="عنوان المقال" value="{{ post.title if post }}" required>
-    <textarea name="content" placeholder="محتوى المقال" rows="10">{{ post.content if post }}</textarea>
-    <button type="submit">حفظ</button>
-</form>
-{% endblock %}
